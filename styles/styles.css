@@ -91,23 +91,50 @@
     padding: 10px;
 }
 .container-circles-blue{
-    background-color:#03071E;
+    background-color: #03071E;
 }
 .container-circles-red{
     background-color: #6A040F;
 }
 .circle {
-    display:inline-flex;
-    min-width: 50px;
     height: 50px;
+    width: 50px;
     border-radius:50%;
+    margin:10px;
     background-color: #748CAB;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-    margin:10px;
 }
 .container-circles-1{
-    flex-wrap:wrap;
+    /* Placeholder */
 }
+.circles-1 {
+    display:inline-flex;
+}
+/* Can't get container-circles-2 to work properly. Had to display:inline-flex on 
+circle-level to make it run in container-circles-1. It's something with the flex-property. The margins and paddings are fine.*/
 .container-circles-2 {
-    
+    display:flex;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+}
+.circles-2 {
+    /* Placeholder */
+}
+.container-circles-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.container-circles-4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+.container-circles-5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 }
