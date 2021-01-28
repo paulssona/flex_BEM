@@ -10,6 +10,7 @@ body {
 .container{
     display: flex;
     margin: 20px;
+    padding: 10px;
     width:480px;
     height: 160px;
     background-color: #F48C06;
@@ -19,21 +20,59 @@ body {
 .square {
     background-color: #9D0208;
     border-radius: 4px;
-    margin: 20px;
+    margin: 10px;
     display: flex;
     width: 78px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.square-size {
+    width: 78px;
+    height: 78px;
+}
+.font-box{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 24px;
+    color: #FFFFFF;
+    display: flex;
+    justify-self: center;
+    justify-content: center;  
 }
 .container-1 {
     align-items: flex-end; 
-}
-.square-1 {
-    width: 78px;
-    height: 78px;
 }
 .container-2 {
     justify-content: center;
     align-items: stretch;
 }
 .container-3 {
-
+    justify-content: flex-end;
+    align-items: center;
+}
+.container-4 {
+    justify-content:space-between;
+    align-items: flex-start;
+}
+.square-4-3 {
+    align-self: flex-end;
+}
+.container-5 {
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+.square-5-2 {
+    height: 64px;
+    justify-content: center;
+    align-self: center; 
+}
+.container-6 {
+    align-items: center;
+    justify-content: center;
+}
+.square-6-2 {
+    height: 78px;
+    /* flex-basis: 156px; */
+    flex-grow:0.5; 
 }
