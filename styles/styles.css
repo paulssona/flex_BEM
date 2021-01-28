@@ -5,6 +5,7 @@ body {
 }
 .block { 
     display:flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .container{
@@ -34,11 +35,10 @@ body {
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
-    line-height: 24px;
+    line-height: 36px;
     color: #FFFFFF;
     display: flex;
-    justify-self: center;
-    justify-content: center;  
+    justify-content: center;
 }
 .container-1 {
     align-items: flex-end; 
@@ -59,13 +59,16 @@ body {
     align-self: flex-end;
 }
 .container-5 {
-    align-items: stretch;
+    align-items: baseline;
     justify-content: space-evenly;
 }
 .square-5-2 {
     height: 64px;
     justify-content: center;
-    align-self: center; 
+}
+.square-5-1,.square-5-3 {
+    height: 105px;
+    padding-top: 35px;
 }
 .container-6 {
     align-items: center;
